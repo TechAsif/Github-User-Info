@@ -8,12 +8,29 @@
     android:id="@+id/acitvity_repositories"
     tools:context=".Repositories">
 
-    <ScrollView
+    <TextView
+        android:id="@+id/userNameTV"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:layout_gravity="center"
+        style="@android:style/TextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:background="#00FF00"
+        android:id="@+id/repos_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
 
 
-    </ScrollView>
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 
 
 

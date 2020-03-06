@@ -5,46 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FF8C00"
+
     tools:context=".UserActivity">
 
     <ImageView
+        android:layout_marginTop="20dp"
         android:id="@+id/avatar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
 
     <TextView
-        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="85dp"
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@android:style/TextAppearance"/>
 
     <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
         android:id="@+id/logIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@android:style/TextAppearance"/>
 
     <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
         android:id="@+id/followers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@android:style/TextAppearance"/>
 
     <TextView
-
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
         android:id="@+id/following"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@android:style/TextAppearance"/>
 
     <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@android:style/TextAppearance"/>
 
     <Button
+
         android:id="@+id/ownedReposBtn"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"

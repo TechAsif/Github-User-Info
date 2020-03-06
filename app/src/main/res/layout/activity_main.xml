@@ -5,25 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="#FF8C00"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/githublogo" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Github User Info"
+        android:textColor="#00ff00"
+        android:textSize="28dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
 
-    <EditText android:id="@+id/input_username"
+    <EditText
+        android:layout_marginTop="40dp"
+        android:id="@+id/input_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint= "@string/username"/>
+        android:hint="@string/username"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:onClick="getUser"
         android:padding="15dp"
-        android:text="@string/login"
-        android:onClick="getUser"/>
+        android:text="@string/login" />
 
 
 </LinearLayout>
